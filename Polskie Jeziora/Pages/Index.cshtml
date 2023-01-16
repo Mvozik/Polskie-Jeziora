@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+    .button {
+        margin-top:50px !important;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
+
+<div style="width:100%; height: 100%;display:flex; flex-direction:column">
+    <h1 class="display-4">Jeziora Polski</h1>
+
+    <a class="nav-link text-dark button" style="font-size:30px" asp-area="" asp-page="/DeepestLakes">Najgłębsze jeziora</a>
+
+    <a class="nav-link text-dark button" style="font-size:30px" asp-area="" asp-page="/BiggestLakes">Największe jeziora</a>
+
+    <a class="nav-link text-dark button" style="font-size:30px" asp-area="" asp-page="/BestLakes">Najciekawsze jeziora</a>
+
+</div>
